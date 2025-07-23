@@ -725,7 +725,7 @@
                     <p>Have questions about the book or want to connect? Reach out via WhatsApp.</p>
                 </div>
                 <div>
-                    <a href="https://wa.me/12468246027" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+                    <a href="https://wa.me/12468246027" target="_blank" rel="noopener noreferrer" class="whatsapp-button" id="whatsapp-link" >
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="WhatsApp Icon">
                         Contact via WhatsApp
                     </a>
@@ -850,6 +850,12 @@
                 });
             });
         });
+
+
+         const countryCode = "1";
+    const number = "2468246027";
+    const whatsappURL = "https://api.whatsapp.com/send?phone=" + countryCode + number;
+    document.getElementById('whatsapp-link').href = whatsappURL;
     </script>
 </body>
 </html>
