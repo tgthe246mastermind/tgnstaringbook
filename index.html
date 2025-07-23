@@ -725,7 +725,7 @@
                     <p>Have questions about the book or want to connect? Reach out via WhatsApp.</p>
                 </div>
                 <div>
-                    <a href="https://api.whatsapp.com/send/?phone=12468246027&text&type=phone_number&app_absent=0" class="whatsapp-button">
+                    <a href="https://api.whatsapp.com/send?phone=12468246027" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="WhatsApp Icon">
                         Contact via WhatsApp
                     </a>
@@ -823,15 +823,6 @@
                     this.textContent = originalText;
                     this.disabled = false;
                 }, 2000);
-            });
-            
-            // WhatsApp button handling
-            const whatsappButton = document.querySelector('.whatsapp-button');
-            whatsappButton.addEventListener('click', function(e) {
-                e.preventDefault();
-                if (confirm('You are about to open a WhatsApp chat with TGN (COSSOE) Howard’s official contact number. This is a secure link to WhatsApp’s official service. Continue?')) {
-                    window.location.href = this.href;
-                }
             });
             
             // Add hover effects to feature cards
